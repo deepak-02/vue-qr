@@ -26,7 +26,7 @@ export default {
      methods:{
       getQRcode(){
     
-      axios.post('https://62c2730a9c3edd1da07a767f--shimmering-cuchufli-a7cdf7.netlify.app/api/rest/qr-generator')
+      axios.post('https://shimmering-cuchufli-a7cdf7.netlify.app/api/rest/qr-generator')
       .then((response)=>{
         this.QRValue=response.data;
         console.log(response.status);
