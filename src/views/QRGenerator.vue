@@ -26,7 +26,7 @@ export default {
      methods:{
       getQRcode(){
     
-      axios.post('https://shimmering-cuchufli-a7cdf7.netlify.app/api/rest/qr-generator')
+      axios.get('http://my--1.herokuapp.com/api/rest/qr-generator')
       .then((response)=>{
         this.QRValue=response.data;
         console.log(response.status);
