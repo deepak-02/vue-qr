@@ -26,7 +26,7 @@ export default {
      methods:{
       getQRcode(){
     
-      axios.get('http://my--1.herokuapp.com/api/rest/qr-generator')
+      axios.get('https://attendance-production-ce48.up.railway.app/api/rest/qr-generator')
       .then((response)=>{
         this.QRValue=response.data;
         console.log(response.status);
