@@ -25,8 +25,8 @@ export default {
      },
      methods:{
       getQRcode(){
-    
-      axios.get('https://attendance-production-ce48.up.railway.app/api/rest/qr-generator')
+    //https://attendance-production-ce48.up.railway.app/api/rest/qr-generator
+      axios.get('https://ptf-attendance.onrender.com/api/qr/get')
       .then((response)=>{
         // this.QRValue=response.data;
            this.QRValue = response.data.qrString;
