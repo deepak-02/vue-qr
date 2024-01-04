@@ -28,7 +28,8 @@ export default {
     
       axios.get('https://attendance-production-ce48.up.railway.app/api/rest/qr-generator')
       .then((response)=>{
-        this.QRValue=response.data;
+        // this.QRValue=response.data;
+           this.QRValue = response.data.qrString;
         console.log(response.status);
         console.log(response.data);
       }).catch((error)=>{
